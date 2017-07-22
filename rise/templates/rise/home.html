@@ -1,0 +1,83 @@
+ {% extends 'rise/base.html' %}{% block content %}{% load staticfiles %}{% load widget_tweaks %}
+
+<div class="large">
+    <form action='' method='POST' enctype='multipart/form-data'>
+        <div class="note">
+            <p> For security and protection ,change the TransactionId to that you can rememeber.And make sure you ask ,your loan officer provide your transactionId when ever you call or receive a call</p>
+        </div>
+        {% csrf_token %}
+        <table>
+            <tr>
+
+                <td> <label>TransactionId:</label></td>
+
+                <td>{{ form.Transaction|add_class:" cl "}}</td>
+            </tr>
+            <tr>
+                <td> <label>FirstName:</label></td>
+                <td>{{ form.FirstName|add_class:" cl "}}</td>
+            </tr>
+            <tr>
+                <td><label>LastName</label></td>
+                <td>{{ form.LastName |add_class:" cl "}}</td>
+            </tr>
+            <tr>
+                <td> <label>AlternateNum:</label></td>
+                <td>{{ form.AlternatePhoneNumber|add_class:" cl "}}</td>
+            </tr>
+            <tr>
+
+                <td> <label>BankName</td><td>{{ form.BankName|add_class:" cl "}}</td>
+        </tr>
+            <tr>
+        <td><label>RoutingNumber:</label></td>
+
+                <td>{{ form.RoutNumber|add_class:" cl "}}</td>
+            </tr>
+            <tr>
+                <td> <label>AccountNum:</label></td>
+                <td>{{ form.AccountNumber|add_class:" cl "}}</td>
+            </tr>
+            <tr>
+                <td><label>OnlineUserId:</td><td> {{ form.OnlineUserId|add_class:" cl "}}</td>
+        </tr>
+            <tr>
+                <td> <label>OnlinePassword:</label>
+                </td>
+                <td>{{ form.OnlineUserPassword|add_class:"cl"}}</td>
+            </tr>
+            <tr>
+
+                <td><label>LoadAmount</label></td>
+                <td>{{ form.LoanAmount|add_class:" cl "}}</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+
+                    <button type="submit" class="submit">ProcessTransaction</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div class="small">
+    <form action='' method='POST' enctype='multipart/form-data'>
+        <div class="note">
+            <p> For security and protection ,change the TransactionId to that you can rememeber.And make sure you ask,your loan officer provide your transactionId when ever you call or receive a call</p>
+        </div>
+        {% csrf_token %}
+        <label>TransactionId:</label>{{ form.Transaction|add_class:"cl"}}<label>FirstName:</label>{{ form.FirstName|add_class:" cl "}}<label>LastName</label>{{ form.LastName |add_class:" cl "}} <label>AlternateNum:</label>{{ form.AlternatePhoneNumber|add_class:"cl"}}
+        <label>BankNam</label>{{ form.BankName|add_class:" cl "}}<label>RoutingNumber:</label>{{ form.RoutNumber|add_class:" cl "}}<label>AccountNum:</label>{{ form.AccountNumber|add_class:" cl "}}
+
+        <label>OnlineUserId:</label> {{ form.OnlineUserId|add_class:"cl"}} <label>OnlinePassword:</label> {{ form.OnlineUserPassword|add_class:"cl"}}
+
+
+        <label>LoadAmount</label> {{ form.LoanAmount|add_class:"cl"}}
+
+        <button type="submit" class="submit">ProcessTransaction</button>
+
+    </form>
+</div>
+
+
+{% endblock content %}>

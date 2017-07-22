@@ -1,0 +1,129 @@
+                                    body {
+                                        width: 100%;
+                                        background-color: black
+                                    }
+                                    
+                                    header {
+                                        background-image: url('../image/header.jpg');
+                                        height: 240px;
+                                        -webkit-background-repeat: repeat;
+                                        -ms-background-repeat: repeat;
+                                        -moz-background-repeat: repeat;
+                                        -o-background-repeat: repeat;
+                                        background-repeat: repeat;
+                                        background-attachment: fixed;
+                                        -webkit-background-attachment: fixed;
+                                        -moz-background-attachment: fixed;
+                                        -o-background-attachment: fixed;
+                                        -ms-background-attachment: fixed;
+                                        margin-top: -10px;
+                                        max-width: auto;
+                                        margin-left: -10px;
+                                    }
+                                    
+                                    .top {
+                                        background-color: navy;
+                                        width: 100%;
+                                        height: 10px;
+                                        margin-left: -8px;
+                                        margin-top: -10px;
+                                        margin-bottom: 10px;
+                                    }
+                                    
+                                    .bottom {
+                                        width: 100%;
+                                        height: 8px;
+                                        margin-left: -8px;
+                                        margin-top: -5px;
+                                        margin-bottom: 10px;
+                                        background-color: navy;
+                                    }
+                                    
+                                    .set {
+                                        font-size: 20px;
+                                        margin-top: 20px;
+                                        background-color: rgba(0, 0, 128, 0.8);
+                                        margin-left: 20%;
+                                        width: 50%;
+                                        color: white;
+                                        padding: 5px 50px 5px;
+                                        border-radius: 10px;
+                                        -webkit-border-radius: 10px;
+                                        text-align: center;
+                                    }
+                                    
+                                    form {
+                                        margin-top: -15px;
+                                        background-color: white;
+                                        text-align: center;
+                                        width: 50%;
+                                        margin-left: 23%;
+                                        border-bottom-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                    }
+                                    
+                                    label {
+                                        margin: 20px;
+                                    }
+                                    
+                                    .cl {
+                                        text-align: center
+                                    }
+                                    
+                                    .submit {
+                                        width: 300px;
+                                        margin-left: 48px;
+                                        background-color: rgba(0, 0, 128, 0.8);
+                                        color: white;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    table {
+                                        margin-left: 125px;
+                                    }
+                                    
+                                    .cl {
+                                        height: 30px;
+                                        width: 200px;
+                                    }
+                                    
+                                    .note {
+                                        color: red;
+                                        width: 80%;
+                                        text-align: center;
+                                        margin-left: 40px;
+                                        top: 10px;
+                                        position: relative
+                                    }
+                                    
+                                    @media only screen and (min-width:150px) and (max-width:680px) {
+                                        form {
+                                            width: 65%;
+                                            margin-left: 15%;
+                                        }
+                                        .submit {
+                                            width: 100px;
+                                            margin-left: 10px;
+                                            margin-top: 10px;
+                                            margin-bottom: 10px;
+                                            background-color: rgba(0, 0, 128, 0.8);
+                                        }
+                                        .set {
+                                            font-size: 16px;
+                                            margin-left: 12%;
+                                            color: white;
+                                            padding: 40px 40px 50px;
+                                            border-radius: 10px;
+                                            -webkit-border-radius: 10px;
+                                            text-align: center;
+                                        }
+                                        .top {
+                                            width: 50%;
+                                            margin-left: 0px;
+                                        }
+                                        .bottom {
+                                            width: 50%;
+                                            margin-left: 0px;
+                                        }
+                                    }
+                                    /* pop up*/

